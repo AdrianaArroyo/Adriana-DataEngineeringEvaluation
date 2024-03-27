@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    container_name: my-postgresql-container
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: builddb
+      POSTGRES_PASSWORD: resdb
+      POSTGRES_DB: buildingsa
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
