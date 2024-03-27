@@ -115,56 +115,56 @@ Create a data model for CarSalesDataforReports Excel spreadsheet (You can use a 
 
 3. The variables have been written with the first word with a capital letter, I wrote the variables in camelCase, for use a standard. Also, I added types as integer, varchar, and date, also I made restrictions, such as the length of the words.
 
-![Capital letter](images\capital.png)
+![Capital letter](images/capital.png)
 
 ### Read Cardinalities 
 
-![stock](images\stockColor.png)
+![stock](images/stockColor.png)
 
-![cardinalities](images\cardinalities.png)
+![cardinalities](images/cardinalities.png)
 
 Each STOCK may have at most one COLOR.
 Each COLOR may have one or more STOCK.
 
 ## Conceptual data model 
 
-![conceptual data model](images\conceptual.png)
+![conceptual data model](images/conceptual.png)
 
 ## Logical data model 
 
-![logical data model](images\Logical.png)
+![logical data model](images/Logical.png)
 
 ## Exercise 2 - Object Oriented Programming
 
 1. You can find the solution in CarSalesDataObjects.ipynb 
 - For this part, I decided to create a class for every table with a method that receives the attributes and a method that shows the created object.
 
-![Client class](images\clientClass.png)
-![display client](images\displayClient.png)
+![Client class](images/clientClass.png)
+![display client](images/displayClient.png)
 
 2. Based on the point number one, define a class to include another kind of transportation vehicle. Include
 properties and methods that you consider required.
 
 - For this part, I decided to create a new air transport
-![Air transport](images\airtransport.png)
+![Air transport](images/airtransport.png)
 
 ## Exercise 3 - Queries
  - You can find the solution in CarSalesDataQueries.ipynb 
 
  - The same config file was used to make it easier to change the route if necessary and the excel sheets were read.
 
-![Read excel](images\readExcel.png)
+![Read excel](images/readExcel.png)
 
 - To obtain the date and perform the quarter division, the InvoiceDateKey field is converted to a string and then separate the year and month
-![InvoiceDate](images\InvoiceDateKeyString.png)
+![InvoiceDate](images/InvoiceDateKeyString.png)
 
 1. Create a query that returns the top 3 car brands most sold (i.e., having the most car brand sales) during first and third quarter of year 2015.
 
 For this query, the invoices were joined with invoice_line and the result was joined with stock, this is the result of the query. 
-![Query1](images\Query1.png)
+![Query1](images/Query1.png)
 
 
 2. Create a query that shows the top 3 most sold car colors (i.e., having the most car color sales) for each quarter for the years 2012,2013,2014,2015.
 
 For this query, the invoices were joined with invoice_line and the result was joined with stock, and the result was joined with Colors, this is the result of the query. 
-![Query2](images\Query2.png)
+![Query2](images/Query2.png)
