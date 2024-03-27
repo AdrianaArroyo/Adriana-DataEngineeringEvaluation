@@ -38,23 +38,23 @@ For this part, I made the following considerations:
 
 - For the primary key, an md5 hash is created, which takes the fecha and cedula to create it.
 
-![Primary Key](images\primaryKey.png)
+![Primary Key](images/primaryKey.png)
 
 - To process the date, it was formatted to convert it to the AAA-MM-DD format because the data coming from the CSV was not the format that postgress accepts.
 
-![Date](images\date.png)
+![Date](images/date.png)
 
 - For the name of the worker, I decided that instead of having a column for the first name and another for the last name, the first and last names would be merged into one, in my opinion the readability of the information is improved.
 
-![Nombre Completo](images\nombreCompleto.png)
+![Nombre Completo](images/nombreCompleto.png)
 
 - In the CSV you could find duplicate information for the same day and project.
 
-![Duplicate Data](images\duplicateData.png)
+![Duplicate Data](images/duplicateData.png)
 
 - To avoid duplication of data for the same day and project, the rows were combined to add the hours and thus have a single record per day.
 
-![Nombre Completo](images\sumHours.png)
+![Nombre Completo](images/sumHours.png)
 
 - Because the document does not specify the columns that you want to be shown, I created the table with the columns that, in my opinion, make the report more understandable, including
 
@@ -70,22 +70,22 @@ Knowing all the previous considerations, the tables were as follows:
 ## Project 1 
 Name: project_construcción_bodegas_wallmart_cartago
 
-![Project 1 ](images\project1.png)
+![Project 1 ](images/project1.png)
 
 ## Project 2 
 Name: project_construcción_edificio_alpha_alajuela
 
-![Project 2 ](images\project2.png)
+![Project 2 ](images/project2.png)
 
 ## Project 3 
 Name: project_remodelación_mall_desamparados
 
-![Project 3 ](images\project3.png)
+![Project 3 ](images/project3.png)
 
 ## Project 4 
 Name: project_remodelación_museo_de_los_niños
 
-![Project 4 ](images\project4.png)
+![Project 4 ](images/project4.png)
 
 # PART II
 
